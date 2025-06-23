@@ -6,7 +6,6 @@ import { Star, MapPin, Phone, Mail, Menu, X, Scissors, Users, Award, Clock } fro
 import pic2 from "@/public/uzma.jpg";
 import Image from 'next/image';
 
-// Mock data
 const branches = [
   {
     name: "Dombivli",
@@ -43,7 +42,7 @@ const testimonials = [
   {name: "Deepak Karkera", review: "Recently me and my mom (Nisha Karkera) had face and hair treatment. From customer perspective we received a very good treatment and hospitality from both staff and the owner Uzma. They provided genuine feedback about your skin and hair condition (before treatment) and advise us what all are the requirements for betterment instead of just selling the products. You also get this in a reasonable prices so its's worth to visit once.", rating: 4}
 ];
 
-const SalonLanding = () => {
+const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
 
@@ -137,7 +136,7 @@ const SalonLanding = () => {
           >
             <h1 className="text-5xl md:text-7xl font-bold text-slate-800 mb-6">
               Welcome to{' '}
-              <span className="text-emerald-700 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+              <span className="text-emerald-700 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text">
                 Bossin Salon
               </span>
             </h1>
@@ -476,4 +475,4 @@ const SalonLanding = () => {
   );
 };
 
-export default SalonLanding;
+export default Home;
